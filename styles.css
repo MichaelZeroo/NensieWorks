@@ -1,0 +1,592 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #f4a261;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f4a261;
+}
+
+.services,
+.projects,
+.testimonials {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2,
+.projects h2,
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-container,
+.project-container,
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cta {
+    background-color: black;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.about {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.history,
+.vision {
+    max-width: 400px;
+}
+
+.team {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    margin: 1rem;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.member h3 {
+    font-size: 1.2rem;
+}
+
+.member p {
+    font-size: 1rem;
+}
+
+.services-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card {
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    width: calc(33.33% - 2rem); /* 3 cards per row with padding adjustment */
+    margin: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1f364d;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 2rem); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%; /* 1 card per row on small screens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.portfolio-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.portfolio-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.portfolio-item {
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    width: calc(33.33% - 2rem); /* 3 items per row with padding adjustment */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(50% - 2rem); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        width: 100%; /* 1 item per row on small screens */
+    }
+}
+
+.services-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card {
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    width: calc(33.33% - 2rem); /* 3 cards per row with padding adjustment */
+    margin: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1f364d;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 2rem); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%; /* 1 card per row on small screens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.testimonials-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    width: calc(50% - 2rem); /* 2 cards per row */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+cite {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 100%; /* 1 card per row on medium and small screens */
+    }
+}
+
+/* Expertise Section */
+.expertise-section {
+    padding: 3rem 2rem;
+    background-color: #f4f5f7; /* Slight background color for contrast */
+    text-align: center;
+}
+
+.expertise-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.expertise-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.expertise-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: calc(25% - 2rem); /* 4 cards per row */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.expertise-card:hover {
+    transform: translateY(-10px);
+}
+
+.expertise-icon {
+    font-size: 3rem;
+    color: #1f364d;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .expertise-card {
+        width: calc(50% - 2rem); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .expertise-card {
+        width: 100%; /* 1 card per row on small screens */
+    }
+}
+
+/* Featured Projects Section */
+.projects-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #ffffff; 
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 400px;
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.project-card p {
+    margin: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: #1f364d;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #2a4d7a;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .projects-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* What Our Clients Say Section */
+.clients-section {
+    padding: 3rem 2rem;
+    background-color: #f4f5f7;
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.clients-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* If you've already defined the following CSS properties from previous sections, you don't need to add them again. */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: calc(50% - 2rem); /* 2 cards per row */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+cite {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 100%; /* 1 card per row on smaller screens */
+    }
+}
